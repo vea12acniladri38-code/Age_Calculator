@@ -14,7 +14,7 @@ api_key = st.secrets["GOOGLE_API_KEY"]
 
 client = genai.Client(api_key=api_key)
 
-st.title("Age Calculator With Motivation Tips 🚀")
+st.title("Age Calculator With Motivation Tips")
 
 year = st.number_input("Enter Birth Year:", min_value=1900, max_value=2100, step=1)
 month = st.number_input("Enter Birth Month:", min_value=1, max_value=12, step=1)
