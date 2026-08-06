@@ -177,7 +177,7 @@ Rules:
         st.markdown(
             f"""
 <div style="
-background:white;
+background:orange;
 padding:20px;
 border-radius:15px;
 color:black;
