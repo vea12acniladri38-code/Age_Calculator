@@ -4,17 +4,27 @@ from google import genai
 
 st.markdown("""
 <style>
-.stApp {
-    background-color: Coral;
+.stApp{
+background: linear-gradient(135deg,#667eea,#764ba2);
+}
+
+h1,h2,h3,p,label{
+color:white;
+}
+
+div[data-testid="stMetric"]{
+background:#ffffff20;
+padding:15px;
+border-radius:15px;
 }
 </style>
-""", unsafe_allow_html=True)
+""",unsafe_allow_html=True)
 
 api_key = st.secrets["GOOGLE_API_KEY"]
 
 client = genai.Client(api_key=api_key)
 
-st.title("Age Calculator With Motivation Tips")
+st.title("Age Calculator With Motivation Tips 🚀")
 
 year = st.number_input("Enter Birth Year:", min_value=1900, max_value=2100, step=1)
 month = st.number_input("Enter Birth Month:", min_value=1, max_value=12, step=1)
